@@ -1,0 +1,116 @@
+html {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+main {
+    margin: 0;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
+h2,
+h3 {
+    font-family: 'Jockey One', sans-serif;
+}
+
+a,
+p {
+    font-family: Oswald, sans-serif;
+}
+
+
+/* 
+SPORTS
+==============================================================
+*/
+.sports {
+    background: rgb(245, 245, 245);
+    color: #252429;
+}
+
+.sport-content-container {
+    padding: 120px 50px;
+}
+
+.sports h2 {
+    text-align: center;
+    padding-bottom: 80px;
+    font-size: 45px;
+    letter-spacing: 0.1em;
+}
+
+.sports h3 {
+    font-size: 22px;
+    letter-spacing: 0.1em;
+    margin: 100px 0 10px;
+}
+
+.sport-thumbnail {
+    position: relative;
+    color: white;
+    margin: 50px 0;
+    overflow: hidden;
+}
+
+.sport-img {
+    width: 100%;
+}
+
+.sport-content {
+    position: absolute;
+    bottom: 3px;
+    padding: 25px;
+    background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 1));
+    width: 100%;
+}
+
+.sport-content a {
+    font-size: 14px;
+    background: rgb(68, 108, 33);
+    color: white;
+    padding: 8px 16px;
+    border: none;
+    transition: 400ms linear;
+}
+
+.sport-content a:hover {
+    background: rgb(46, 74, 23);
+    border: none;
+    transition: 400ms linear;
+}
+
+.sport-thumbnail > img {
+    transform: scale(1);
+    transition: 400ms;
+}
+.sport-thumbnail:hover > img {
+    transform: scale(1.1);
+    transition: 400ms;
+}
+
+@media (min-width: 768px){
+    .sport-thumbnail-container {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        grid-gap: 30px;
+    }
+    .sport-thumbnail {
+        margin: 0;
+    }
+}
